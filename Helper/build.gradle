@@ -10,8 +10,17 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
 //    compile group: 'org.springframework', name: 'spring', version: '2.5.6.SEC03'
 //    compile group: 'org.springframework.boot', name: 'spring-boot', version: '2.0.0.RELEASE'
+
+//Стандрартная вставка gradle для создания тестов
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+//Создает веб приложение, запускает веб сервер и пр.
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.0.RELEASE'
+//Вроде бы должна решить проблему с предупреждением
+    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.0'
+// Шаблонизатор HTML страниц
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '2.0.0.RELEASE'
+
 }
+

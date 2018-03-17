@@ -1,0 +1,43 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Debug (Launch)",
+            "request": "launch",
+            "cwd": "D://_Prog/Examplecode/Java/cs_ch1",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "HeloWorld",
+            "args": ""
+        },
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "C://Program Files/Java/jdk-9.0.4/bin",
+            "cwd": "D://_Prog/Examplecode/Java/cs_ch1",
+            "startupClass": "HeloWorld",
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            //"jdkPath": "${env:JAVA_HOME}/bin",
+            "jdkPath": "C://Program Files/Java/jrk-9.0.4/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        }
+    ]
+}
