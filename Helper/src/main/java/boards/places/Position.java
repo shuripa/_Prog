@@ -11,6 +11,8 @@ public class Position {
 
     @Override
     public String toString(){
-        return employee.toString();
+        if (employee != null)
+            return employee.toString();
+        else return "empty";
     }
 }

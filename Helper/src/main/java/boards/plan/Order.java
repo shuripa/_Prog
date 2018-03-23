@@ -1,6 +1,6 @@
 package boards.plan;
 
-import boards.modules.Product;
+import boards.products.Product;
 
 public class Order {
     Product product;
