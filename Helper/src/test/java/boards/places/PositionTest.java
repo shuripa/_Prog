@@ -4,13 +4,12 @@ package boards.places;
 
 import boards.employees.Employee;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
-public class WPPositionTest {
+public class PositionTest {
     @Test
     public void shouldAdd(){
         Employee e = new Employee(12713);
-        WPPosition wpPos = new WPPosition();
+        Position wpPos = new Position();
         wpPos.setEmployee(e);
     }
 }

@@ -1,11 +1,11 @@
 package boards;
 
 import boards.employees.Employee;
-import boards.places.WPPosition;
+import boards.places.Position;
 
 public class LanchBoards {
     public static void main(String[] args) {
-        WPPosition wpPos = new WPPosition();
+        Position wpPos = new Position();
         Employee e1 = new Employee(12713);
         Employee e2 = new Employee(12700);
         Employee e3 = new Employee(14122);

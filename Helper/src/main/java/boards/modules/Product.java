@@ -1,4 +1,4 @@
 package boards.modules;
 
-public class Module {
+public class Product {
 }

@@ -1,4 +1,4 @@
 package boards.places;
 
-public class Boards {
+public class Board {
 }

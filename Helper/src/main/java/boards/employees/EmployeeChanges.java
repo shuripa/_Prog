@@ -18,7 +18,7 @@ public class EmployeeChanges {
         int i = 0;
         System.out.println("Смена: " + name);
         for (Employee em: employees) {
-                System.out.println("" + i + ". " + em.toString());
+                System.out.println("" + (i+1) + ". " + em.toString());
             i++;
         }
 
