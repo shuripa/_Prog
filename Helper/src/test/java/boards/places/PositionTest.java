@@ -10,6 +10,6 @@ public class PositionTest {
     public void shouldAdd(){
         Employee e = new Employee(12713);
         Position wpPos = new Position();
-        wpPos.setEmployee(e);
+        wpPos.setEmployeeStated(e);
     }
 }

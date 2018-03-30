@@ -1,53 +1,120 @@
 package boards.employees;
 
 import boards.places.Board;
+import boards.places.Machine;
 import boards.places.Position;
 import boards.plan.Plan;
 import boards.products.Product;
+import boards.server.IdGenerator;
 import org.junit.jupiter.api.Test;
 
 class EmployeeChangesTest {
         //Створення зміни.
-        EmployeeChanges ech = new EmployeeChanges('A');
+        EmployeeChanges empch = new EmployeeChanges('A');
+        IdGenerator idGen = new IdGenerator();
+        Plan p = new Plan();
+        //TODO: Створити робочий календар для змін
+
 
     @Test
     void setEmployees() {
 
-        //Крок1. Працівники.
-        System.out.println("----Крок1.----Видрук зміни А----");
-        ech.setEmployees(new Employee(12615));
-        ech.setEmployees(new Employee(12812));
-        ech.setEmployees(new Employee(14122));
-        ech.printChanges();
+        createEmployee();
+
+        Board b = createBoard();
+
+        createPlan();
+
+        //Крок33 Створення Машини
+        System.out.println("----Крок33 ----створення машини----");
+        Machine m = new Machine("MB-01");
+        m.setBoard(b);
+        System.out.println(m.toString());
+        System.out.println("------------------------------------------------");
+        System.out.println();
+
+        //Крок35 Закидання плану на машину.
+        System.out.println("----Крок35 ----Закидання плану на машину----");
+        m.setOrder(p.getOrder(0)); //TODO: На самом деле должен выбираться конкретный заказ из плана и закидываться на машину. Пока это 0-заказ из массива.
+        System.out.println(m.toString());
+        System.out.println("------------------------------------------------");
+        System.out.println();
+
+        //Крок40. Логування.
+        System.out.println("----Крок4. ----Логування. Видрук стану позиції----");
+
+        b.getPosition(0).setEmployeeStated(empch.employees.get(0));               //TODO: Перенести логування працівника з позиції в клас Machine.
+        System.out.println("Залогований працівник: " + empch.employees.get(0).toString()); //TODO: Заглушка. Виправити.
+        System.out.println("------------------------------------------------");
+        System.out.println();
+
+
+        //Крок50.1. Стартування.
+        System.out.println("----Крок5.1. ----Стартування. Видрук плану позиції. Видрук унікального номеру.----");
+            System.out.println("Унікальний номер модулю: " + idGen.getModuleId());
         System.out.println("------------------------------------------------");
 
-        //Крок2. Дошки.
+        //Крок60.1. Формування.
+        System.out.println("----Крок6.1. ----Формування.----");
+        System.out.println("------------------------------------------------");
+
+        //Крок70.1. Фінішування.
+        System.out.println("----Крок7.1. ----Фінішування.----");
+        System.out.println("------------------------------------------------");
+
+        //Крок50.2. Стартування.
+        System.out.println("----Крок5.2. ----Стартування. Видрук плану позиції. Видрук унікального номеру.----");
+            System.out.println("Номер модулю: " + idGen.getModuleId());
+        System.out.println("------------------------------------------------");
+
+        //Крок60.2. Формування.
+        System.out.println("----Крок6.2. ----Формування.----");
+        System.out.println("------------------------------------------------");
+
+        //Крок70.2. Фінішування.
+        System.out.println("----Крок7.2. ----Фінішування.----");
+        System.out.println("------------------------------------------------");
+
+        //Крок80. Вилоговування.
+        System.out.println("----Крок8. ----Вилоговування.----");
+        System.out.println("------------------------------------------------");
+
+    }
+
+    private void createEmployee() {
+        //Крок10. Працівники.
+        System.out.println("----Крок10.----Видрук працівників зміни А----");
+        empch.setEmployees(new Employee(12615));
+        empch.setEmployees(new Employee(12812));
+        empch.setEmployees(new Employee(14122));
+        empch.printChanges();
+        System.out.println("------------------------------------------------");
+        System.out.println();
+    }
+
+    private Board createBoard() {
+        //Крок20. Дошки.
         //TODO: Потрібно створити клас BoardStock і отримувати дошки звідти.
-        System.out.println("----Крок2.----Вибір працівника 1-----");
+        System.out.println("----Крок20.----Створення дошки і позиції-----");
         Board board = new Board(1323);
         Position wp = new Position();
         board.setPositions(wp);
         System.out.println(board.toString());
         System.out.println("------------------------------------------------");
+        System.out.println();
+        return board;
+    }
 
-        //Крок3. Створення плану.
-        System.out.println("----Крок3. ----Видрук плану позиції----");
-        Plan p = new Plan();
-        p.createOrders(new Product("MFC1841029A0B"),50, ech);
-        p.createOrders(new Product("MFC1841189B0C"), 26, ech);
+    private void createPlan() {
+        //Крок30. Створення плану.
+        System.out.println("----Крок30. ----Створення плану. Видрук плану.----");
+        p.createOrders(new Product("MFC1841029A0B"),6, empch);
+        p.createOrders(new Product("MFC1841189B0C"), 26, empch);
+        p.createOrders(new Product("MFC1801012B0C"), 125, empch);
+        p.createOrders(new Product("MFC1802012B0C"), 15, empch);
         System.out.println(p.toString());
         System.out.println("------------------------------------------------");
-
-        //Крок4. Логування.
-        System.out.println("----Крок4. ----Логування. Видрук стану позиції----");
-        wp.setEmployee(ech.employees.get(0));           //TODO: Перенести логування працівника з позиції в клас боард.
-        System.out.println("Залогований працівник: " + ech.employees.get(0).toString());
-        System.out.println("------------------------------------------------");
-
-        //Крок5
+        System.out.println();
     }
 
-    @Test
-    void printEployees() {
-    }
 }

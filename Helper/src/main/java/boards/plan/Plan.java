@@ -27,4 +27,8 @@ public class Plan {
                 '}';
     }
 
+    public Order getOrder(int i) {
+        return orders.get(0);
+        //TODO: Замовлення буде вибиратись зі списку. Наразі невідомо який параметр буде передаватись. Можливо потрібен буде не ArrayList а Map.
+    }
 }

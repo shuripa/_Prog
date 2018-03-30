@@ -15,6 +15,10 @@ public class Board {
         positions.add(position);
     }
 
+    public Position getPosition(int index){
+        return positions.get(index);
+    }
+
     @Override
     public String toString(){
         String s = "";

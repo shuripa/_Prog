@@ -1,4 +1,4 @@
-package lanch;
+package springLanch;
 
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

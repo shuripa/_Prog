@@ -3,16 +3,16 @@ package boards.places;
 import boards.employees.Employee;
 
 public class Position {
-    private Employee employee;
+    private Employee employeeStated;
 
-    public void setEmployee(Employee employee) {
-        this.employee = employee;
+    public void setEmployeeStated(Employee employeeStated) {
+        this.employeeStated = employeeStated;
     }
 
     @Override
     public String toString(){
-        if (employee != null)
-            return employee.toString();
-        else return "empty";
+        if (employeeStated != null)
+            return employeeStated.toString();
+        else return "Позиція пуста";
     }
 }
