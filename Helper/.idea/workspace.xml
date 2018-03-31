@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78ac66b7-d945-48c2-b849-6e2ead93bffd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/boards/server/IdGenerator.java" afterDir="false" />
+    <list default="true" id="78ac66b7-d945-48c2-b849-6e2ead93bffd" name="Default" comment="Етап 5.  Рефакторинг тесту. Розробка: Machine">
+      <change afterPath="$PROJECT_DIR$/src/main/java/boards/server/IdGen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boards/LanchBoards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boards/LanchBoards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/lanch/ApplicationLauncher.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/boards/places/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boards/places/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/boards/places/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boards/places/Machine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boards/places/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boards/places/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boards/plan/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boards/plan/Plan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lanch/ApplicationLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springLanch/ApplicationLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boards/plan/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boards/plan/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boards/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boards/products/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boards/server/IdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boards/server/IdGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/boards/employees/EmployeeChangesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/boards/employees/EmployeeChangesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/boards/places/PositionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/boards/places/PositionTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -30,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EmployeeChangesTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EmployeeChangesTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/boards/employees/EmployeeChangesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="45" column="145" selection-start-line="45" selection-start-column="145" selection-end-line="45" selection-end-column="145" />
+            <state relative-caret-position="204">
+              <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,13 +41,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Plan.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/boards/plan/Plan.java">
+      <file leaf-file-name="Machine.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/boards/places/Machine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#326#327#0" expanded="true" />
+                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#405#406#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,38 +62,17 @@
       <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/boards/plan/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Machine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/boards/places/Machine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+            <state relative-caret-position="306">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#253#254#0" expanded="true" />
+                <element signature="e#141#142#0" expanded="true" />
+                <element signature="e#171#172#0" expanded="true" />
+                <element signature="e#420#421#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
                 <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#326#327#0" expanded="true" />
+                <element signature="e#315#316#0" expanded="true" />
                 <element signature="e#360#361#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#440#441#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IdGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/boards/server/IdGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-              <folding>
-                <element signature="e#102#103#0" expanded="true" />
-                <element signature="e#130#131#0" expanded="true" />
+                <element signature="e#400#401#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,27 +81,49 @@
       <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/boards/places/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="357">
+              <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
               <folding>
-                <element signature="e#205#206#0" expanded="true" />
-                <element signature="e#243#244#0" expanded="true" />
-                <element signature="e#294#295#0" expanded="true" />
-                <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#404#405#0" expanded="true" />
+                <element signature="method#toString#0;class#Board#0" />
+                <element signature="e#777#778#0" expanded="true" />
+                <element signature="e#810#811#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#897#898#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Position.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/boards/places/Position.java">
+      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/boards/products/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
-                <element signature="e#162#163#0" expanded="true" />
+                <element signature="e#98#99#0" expanded="true" />
+                <element signature="e#130#131#0" expanded="true" />
+                <element signature="e#303#304#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#685#686#0" expanded="true" />
+                <element signature="e#735#736#0" expanded="true" />
+                <element signature="e#775#776#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Employee.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/boards/employees/Employee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding>
+                <element signature="e#99#100#0" expanded="true" />
+                <element signature="e#127#128#0" expanded="true" />
+                <element signature="e#172#173#0" expanded="true" />
                 <element signature="e#202#203#0" expanded="true" />
               </folding>
             </state>
@@ -132,6 +138,7 @@
         <option value="HTML File" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Singleton" />
       </list>
     </option>
   </component>
@@ -532,17 +539,18 @@
         <option value="$PROJECT_DIR$/src/main/java/boards/plan/Stock.java" />
         <option value="$PROJECT_DIR$/src/main/java/boards/plan/OrdersStock.java" />
         <option value="$PROJECT_DIR$/src/main/java/boards/places/SkillsBoard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/boards/plan/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/boards/products/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/boards/plan/OrdersList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/boards/server/IdGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/headF/dotCom/SimpleDotComGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/headF/dotCom/SimpleDotCom.java" />
-        <option value="$PROJECT_DIR$/src/main/java/boards/places/Board.java" />
         <option value="$PROJECT_DIR$/src/main/java/boards/places/Position.java" />
         <option value="$PROJECT_DIR$/src/main/java/boards/plan/Plan.java" />
-        <option value="$PROJECT_DIR$/src/main/java/boards/places/Machine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/boards/products/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/boards/server/IdGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/boards/server/IdGen.java" />
         <option value="$PROJECT_DIR$/src/test/java/boards/employees/EmployeeChangesTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/boards/places/Board.java" />
+        <option value="$PROJECT_DIR$/src/main/java/boards/plan/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/boards/places/Machine.java" />
       </list>
     </option>
   </component>
@@ -927,22 +935,17 @@
       <option name="project" value="LOCAL" />
       <updated>1521831274139</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Етап 5.  Рефакторинг тесту. Розробка: Machine">
+      <created>1522445468845</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1522445468845</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EmployeeChangesTest_setEmployees - 2018.03.24 at 02h 46m 28s.xml">
-      <configuration name="EmployeeChangesTest.setEmployees" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeChangesTest_setEmployees - 2018.03.24 at 02h 54m 56s.xml">
-      <configuration name="EmployeeChangesTest.setEmployees" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeChangesTest_setEmployees - 2018.03.30 at 22h 36m 58s.xml">
-      <configuration name="EmployeeChangesTest.setEmployees" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeChangesTest_setEmployees - 2018.03.30 at 22h 53m 09s.xml">
-      <configuration name="EmployeeChangesTest.setEmployees" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="EmployeeChangesTest_setEmployees - 2018.03.30 at 23h 30m 24s.xml">
       <configuration name="EmployeeChangesTest.setEmployees" configurationId="JUnit" />
     </history-entry>
@@ -959,6 +962,18 @@
       <configuration name="EmployeeChangesTest.setEmployees" configurationId="JUnit" />
     </history-entry>
     <history-entry file="EmployeeChangesTest_setEmployees - 2018.03.31 at 00h 27m 42s.xml">
+      <configuration name="EmployeeChangesTest.setEmployees" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeChangesTest_setEmployees - 2018.03.31 at 12h 28m 37s.xml">
+      <configuration name="EmployeeChangesTest.setEmployees" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeChangesTest_setEmployees - 2018.03.31 at 12h 30m 04s.xml">
+      <configuration name="EmployeeChangesTest.setEmployees" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeChangesTest_setEmployees - 2018.03.31 at 13h 35m 12s.xml">
+      <configuration name="EmployeeChangesTest.setEmployees" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeChangesTest_setEmployees - 2018.03.31 at 15h 08m 26s.xml">
       <configuration name="EmployeeChangesTest.setEmployees" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -982,10 +997,10 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.23387097" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35752687" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27553764" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3293011" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33290488" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33290488" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="Gradle" order="3" />
@@ -1036,7 +1051,8 @@
     <MESSAGE value="Етап 2.  Список працівників." />
     <MESSAGE value="Етап 3.  Створення класів для замовлень: Machine, Order,OrderList" />
     <MESSAGE value="Етап 4.  Створення плану: Machine, Order, /OrderList/-&gt;Plan" />
-    <option name="LAST_COMMIT_MESSAGE" value="Етап 4.  Створення плану: Machine, Order, /OrderList/-&gt;Plan" />
+    <MESSAGE value="Етап 5.  Рефакторинг тесту. Розробка: Machine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Етап 5.  Рефакторинг тесту. Розробка: Machine" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/headF/dotCom/SimpleDotComGame.java">
@@ -1248,17 +1264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/boards/employees/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#202#203#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/boards/employees/SkillsEmployee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1273,21 +1278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/boards/products/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#97#98#0" expanded="true" />
-            <element signature="e#129#130#0" expanded="true" />
-            <element signature="e#77#78#0" expanded="true" />
-            <element signature="e#104#105#0" expanded="true" />
-            <element signature="e#144#145#0" expanded="true" />
-            <element signature="e#176#177#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1315,21 +1305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/boards/places/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#205#206#0" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/boards/places/Position.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1337,17 +1312,6 @@
           <folding>
             <element signature="e#162#163#0" expanded="true" />
             <element signature="e#202#203#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/boards/server/IdGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="e#102#103#0" expanded="true" />
-            <element signature="e#130#131#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1362,35 +1326,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/boards/plan/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/boards/employees/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        <state relative-caret-position="187">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#99#100#0" expanded="true" />
+            <element signature="e#127#128#0" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/boards/places/Machine.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/boards/products/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#98#99#0" expanded="true" />
+            <element signature="e#130#131#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/boards/server/IdGen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#136#137#0" expanded="true" />
+            <element signature="e#170#171#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/boards/server/IdGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#102#103#0" expanded="true" />
+            <element signature="e#130#131#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/boards/employees/EmployeeChangesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="45" column="145" selection-start-line="45" selection-start-column="145" selection-end-line="45" selection-end-column="145" />
+        <state relative-caret-position="204">
+          <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/boards/places/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <folding>
+            <element signature="method#toString#0;class#Board#0" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/boards/plan/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/boards/places/Machine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
           </folding>
         </state>
       </provider>

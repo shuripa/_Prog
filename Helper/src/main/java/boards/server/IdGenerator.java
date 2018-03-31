@@ -1,5 +1,6 @@
 package boards.server;
 
+//IdGenerator это синглтон
 public class IdGenerator {
     private int moduleId;
 
@@ -12,3 +13,4 @@ public class IdGenerator {
         return moduleId;
     }
 }
+

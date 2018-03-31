@@ -5,57 +5,62 @@ import boards.places.Machine;
 import boards.places.Position;
 import boards.plan.Plan;
 import boards.products.Product;
-import boards.server.IdGenerator;
+import boards.server.IdGen;
 import org.junit.jupiter.api.Test;
 
 class EmployeeChangesTest {
         //Створення зміни.
         EmployeeChanges empch = new EmployeeChanges('A');
-        IdGenerator idGen = new IdGenerator();
+        IdGen idGen = IdGen.getInstance();
         Plan p = new Plan();
         //TODO: Створити робочий календар для змін
-
 
     @Test
     void setEmployees() {
 
-        createEmployee();
-
-        Board b = createBoard();
-
-        createPlan();
+        createEmployee();               //Крок10. Працівники.
+        Board board = createBoard();    //Крок20. Дошки.
+        createPlan();                   //Крок30. Створення плану.
 
         //Крок33 Створення Машини
         System.out.println("----Крок33 ----створення машини----");
-        Machine m = new Machine("MB-01");
-        m.setBoard(b);
-        System.out.println(m.toString());
+        Machine machine = new Machine("MB-01");
+        machine.setBoard(board);
+        System.out.println(machine.toString());
         System.out.println("------------------------------------------------");
         System.out.println();
 
         //Крок35 Закидання плану на машину.
         System.out.println("----Крок35 ----Закидання плану на машину----");
-        m.setOrder(p.getOrder(0)); //TODO: На самом деле должен выбираться конкретный заказ из плана и закидываться на машину. Пока это 0-заказ из массива.
-        System.out.println(m.toString());
+        machine.setOrder(p.getOrder(0)); //TODO: На самом деле должен выбираться конкретный заказ из плана и закидываться на машину. Пока это 0-заказ из массива.
+        System.out.println(machine.toString());
         System.out.println("------------------------------------------------");
         System.out.println();
 
         //Крок40. Логування.
-        System.out.println("----Крок4. ----Логування. Видрук стану позиції----");
+        System.out.println("----Крок40. ----Логування. Видрук стану позиції----");
 
-        b.getPosition(0).setEmployeeStated(empch.employees.get(0));               //TODO: Перенести логування працівника з позиції в клас Machine.
-        System.out.println("Залогований працівник: " + empch.employees.get(0).toString()); //TODO: Заглушка. Виправити.
+        board.getPosition(0).setEmployeeStated(empch.employees.get(0));              //TODO: Перенести логування працівника з позиції в клас Machine.
+        System.out.println("Залогований працівник: " + empch.employees.get(0).toString());  //TODO: Заглушка. Виправити.
+        System.out.println(machine.toString());
         System.out.println("------------------------------------------------");
         System.out.println();
 
 
         //Крок50.1. Стартування.
-        System.out.println("----Крок5.1. ----Стартування. Видрук плану позиції. Видрук унікального номеру.----");
-            System.out.println("Унікальний номер модулю: " + idGen.getModuleId());
+        System.out.println("----Крок50.1. ----Стартування. Видрук плану позиції. Видрук унікального номеру.----");
+        int id = idGen.getModuleId();
+        //TODO: функція старту для дошки. Номер дошки передається ззовні.
+        machine.start(board.getId());
+        //TODO: створення модулю.
+
+        System.out.println("Унікальний номер модулю: " + machine.toString());
         System.out.println("------------------------------------------------");
 
         //Крок60.1. Формування.
         System.out.println("----Крок6.1. ----Формування.----");
+        int timeForm = (int)(Math.random()*10);
+        System.out.println("Час формування = " + timeForm);
         System.out.println("------------------------------------------------");
 
         //Крок70.1. Фінішування.
