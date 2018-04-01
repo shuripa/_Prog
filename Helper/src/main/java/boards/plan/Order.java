@@ -3,13 +3,23 @@ package boards.plan;
 import boards.products.Product;
 
 public class Order {
-    Product product;
+//    Product product;
+    String productName;
+    double etalonTime;
     int count;
     int started;
     int finished;
 
-    public Order(Product product, Integer count) {
-        this.product = product;
+//    public Order(Product product, Integer count) {
+////        this.product = product;
+//        this.count = count;
+//        this.started = 0;
+//        this.finished = 0;
+//    }
+
+    public Order(String productName, Integer count, double etalonTime) {
+        this.productName = productName;
+        this.etalonTime = etalonTime;
         this.count = count;
         this.started = 0;
         this.finished = 0;
@@ -31,11 +41,15 @@ public class Order {
         finished++;
     }
 
+    public String getProductName() {
+        return productName;
+    }
 
     @Override
     public String toString() {
         return "Order{" +
-                "product=" + product +
+                "productName='" + productName + '\'' +
+                ", etalonTime=" + etalonTime +
                 ", count=" + count +
                 ", started=" + started +
                 ", finished=" + finished +

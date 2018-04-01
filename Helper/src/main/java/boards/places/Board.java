@@ -1,5 +1,7 @@
 package boards.places;
 
+import boards.products.Product;
+
 import java.util.ArrayList;
 
 public class Board {
@@ -7,6 +9,12 @@ public class Board {
     private SkillsBoard skillBoard;
     private ArrayList<Position> positions = new ArrayList<>();
     private int assigned = 0;
+
+    public void setProduct(Product joinProduct) {
+        this.joinProduct = joinProduct;
+    }
+
+    private Product joinProduct = null;
 
     public Board(int boardId) {
         this.boardId = boardId;
@@ -19,17 +27,8 @@ public class Board {
         return positions.get(index);
     }
 
-    public int getId() {
+    public int getBoardId() {
         return boardId;
-    }
-
-    @Override
-    public String toString(){
-        String s = "";
-        for (Position p: positions){
-            s = s + p.toString();
-        }
-        return "BoardID: " + boardId + ", Pos: " + s;
     }
 
     public void setAssignned(int uniqNo) {
@@ -41,4 +40,13 @@ public class Board {
     }
 
 
+    @Override
+    public String toString() {
+        return "Board{" +
+                "boardId=" + boardId +
+                ", skillBoard=" + skillBoard +
+                ", positions=" + positions +
+                ", assigned=" + assigned +
+                '}';
+    }
 }

@@ -13,8 +13,9 @@ public class Plan {
     //TODO: Такий самий має бути але не зі зміною а з крайнім терміном 15:00:00
 
     public void createOrders(Product product, int count, EmployeeChanges ech){
-        orders.add(new Order(product, count));
+        orders.add(new Order(product.getName(), count, 3.75));
     }
+
     public Order getOrders(SkillsEmployee skillsEmployee){
         //Заглушка. В подальшому реалізувати отримання замовлення на підставі скіла.
         return orders.get(0);

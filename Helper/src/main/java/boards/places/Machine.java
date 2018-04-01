@@ -1,6 +1,7 @@
 package boards.places;
 
 import boards.plan.Order;
+import boards.products.Product;
 import boards.server.IdGen;
 
 import java.util.ArrayList;
@@ -26,7 +27,7 @@ public class Machine {
         //Пошук першого замовлення яке підходить для дошки.
         //TODO: отримання дошки
         Board brd = null;
-        for (Board b: boards) if (b.getId() == brdId) brd = b;
+        for (Board b: boards) if (b.getBoardId() == brdId) brd = b;
         //TODO: перевірка умови яке замовлення підходить для даної дошки. Отримання замовлення
         Order ord = orders.get(0);
         //TODO: отримання унікального номеру для модулю
@@ -35,7 +36,10 @@ public class Machine {
         brd.setAssignned(UniqNo);
         //TODO: реалізувати статистику. Кількість в роботі, кількість зроблених.
         ord.incStarted();
-
+        //TODO: Створення продукту.
+        Product p = new Product(ord.getProductName(), UniqNo, ord);
+        //TODO: Приєднання продукту до дошки. Поки не зрозуміло як правильно.
+//        brd.setProduct(p);
         //TODO: cтворити тест для класу.
     }
 
