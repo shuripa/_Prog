@@ -3,12 +3,14 @@ package boards.plan;
 import boards.products.Product;
 
 public class Order {
-//    Product product;
-    String productName;
-    double etalonTime;
-    int count;
-    int started;
-    int finished;
+
+    //    Product product;
+    private int ordId = 0;
+    private String productName;
+    private double etalonTime;
+    private int count;
+    private int started;
+    private int finished;
 
 //    public Order(Product product, Integer count) {
 ////        this.product = product;
@@ -17,9 +19,10 @@ public class Order {
 //        this.finished = 0;
 //    }
 
-    public Order(String productName, Integer count, double etalonTime) {
+    public Order(String productName, Integer count, double etalonTime, int ordId) {
         this.productName = productName;
         this.etalonTime = etalonTime;
+        this.ordId = ordId;
         this.count = count;
         this.started = 0;
         this.finished = 0;
@@ -54,5 +57,9 @@ public class Order {
                 ", started=" + started +
                 ", finished=" + finished +
                 '}';
+    }
+
+    public int getOrdId() {
+        return ordId;
     }
 }

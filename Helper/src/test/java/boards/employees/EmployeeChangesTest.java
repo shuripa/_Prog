@@ -26,13 +26,8 @@ class EmployeeChangesTest {
         loginEmployee();                //Крок40. Логування.
         formingStart();                 //Крок50.1. Стартування.
         forming();                      //Крок60.1. Формування.
+        formingFinish();                //Крок70.1. Фінішування.
 
-
-        //Крок70.1. Фінішування.
-        System.out.println("----Крок7.1. ----Фінішування.----");
-        System.out.println("------------------------------------------------");
-
-        System.out.println();
 
         //Крок50.2. Стартування.
         System.out.println("----Крок5.2. ----Стартування. Видрук плану позиції. Видрук унікального номеру.----");
@@ -53,6 +48,15 @@ class EmployeeChangesTest {
 
     }
 
+    private void formingFinish() {
+        //Крок70.1. Фінішування.
+        System.out.println("----Крок7.1. ----Фінішування.----");
+        System.out.println("------------------------------------------------");
+        machine.finish(1);
+        //TODO: Фінішування не реалізоване
+        System.out.println();
+    }
+
     private void forming() {
         //Крок60.1. Формування.
         System.out.println("----Крок6.1. ----Формування.----");
@@ -66,9 +70,16 @@ class EmployeeChangesTest {
     private void formingStart() {
         //Крок50.1. Стартування.
         System.out.println("----Крок50.1. ----Стартування. Видрук плану позиції. Видрук унікального номеру.----");
-        machine.start(board.getBoardId());   //функція старту для дошки. Номер дошки передається ззовні.
+//        machine.start(board.getBoardId());   //функція старту для дошки. Номер дошки передається ззовні. Взята довільна дошка.
+        machine.start(1323);
         //TODO: створення модулю.
-        System.out.println("Унікальний номер модулю: " + machine.toString());
+        System.out.println("             Машина" +
+                "                        Дошка" +
+                "                    Залогований працівник" +
+                "   Модуль" +
+                "                         Замовлення на машині" +
+                "         Статистика замовлення");
+        System.out.println(machine.toString());
         System.out.println("------------------------------------------------");
         System.out.println();
     }

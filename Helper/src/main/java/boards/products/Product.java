@@ -7,9 +7,10 @@ import java.util.Calendar;
 import java.util.HashMap;
 
 public class Product {
-    private int id;
+    private int prodId;
 //    private int orderNo;
     private Order ord;
+    private int ordId;
     private String name;
     private Calendar dtStart;
     private Calendar dtFinish;
@@ -25,17 +26,23 @@ public class Product {
 //        this.etalonTime = etalonTime;
 //    }
 
-//    public Product(String name, double etalonTime, int id){
+//    public Product(String name, double etalonTime, int prodId){
 //        this.etalonTime = etalonTime;
 //    }
 
-//    public Product(String name, int id, int orderNo){
+//    public Product(String name, int prodId, int orderNo){
 //        this.etalonTime = etalonTime;
 //    }
+
+    public Product(String name, int prdId, int ordId){
+        this.name = name;
+        this.prodId = prdId;
+        this.ordId = ordId;
+    }
 
     public Product(String name, int id, Order ord){
         this.name = name;
-        this.id = id;
+        this.prodId = id;
         this.ord = ord;
     }
 
@@ -58,7 +65,7 @@ public class Product {
     @Override
     public String toString() {
         return "Product{" +
-                "id=" + id +
+                "prodId=" + prodId +
                 ", name='" + name + '\'' +
                 ", dtStart=" + dtStart +
                 ", dtFinish=" + dtFinish +
