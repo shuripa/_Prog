@@ -4,7 +4,6 @@ import boards.products.Product;
 
 public class Order {
 
-    //    Product product;
     private int ordId = 0;
     private String productName;
     private double etalonTime;
@@ -12,13 +11,7 @@ public class Order {
     private int started;
     private int finished;
 
-//    public Order(Product product, Integer count) {
-////        this.product = product;
-//        this.count = count;
-//        this.started = 0;
-//        this.finished = 0;
-//    }
-
+    //TODO: etalonTime має братись з мастерДати
     public Order(String productName, Integer count, double etalonTime, int ordId) {
         this.productName = productName;
         this.etalonTime = etalonTime;
@@ -32,7 +25,7 @@ public class Order {
         return started;
     }
 
-    public void incStarted() {
+    public void starting() {
         started++;
     }
 
@@ -40,12 +33,16 @@ public class Order {
         return finished;
     }
 
-    public void incFinished() {
+    public void finishing() {
         finished++;
     }
 
     public String getProductName() {
         return productName;
+    }
+
+    public int getOrdId() {
+        return ordId;
     }
 
     @Override
@@ -54,12 +51,8 @@ public class Order {
                 "productName='" + productName + '\'' +
                 ", etalonTime=" + etalonTime +
                 ", count=" + count +
-                ", started=" + started +
-                ", finished=" + finished +
+                ", starting=" + started +
+                ", finishing=" + finished +
                 '}';
-    }
-
-    public int getOrdId() {
-        return ordId;
     }
 }

@@ -6,6 +6,7 @@ import boards.places.Position;
 import boards.plan.Plan;
 import boards.products.Product;
 import org.junit.jupiter.api.Test;
+import java.lang.String;
 
 class EmployeeChangesTest {
 
@@ -27,6 +28,8 @@ class EmployeeChangesTest {
         formingStart();                 //Крок50.1. Стартування.
         forming();                      //Крок60.1. Формування.
         formingFinish();                //Крок70.1. Фінішування.
+
+
 
 
         //Крок50.2. Стартування.
@@ -132,6 +135,7 @@ class EmployeeChangesTest {
         board = new Board(1323);
         Position wp = new Position();
         board.setPositions(wp);
+        board.setSkill("MFC1841029...");
         System.out.println(board.toString());
         System.out.println("------------------------------------------------");
         System.out.println();

@@ -3,12 +3,11 @@ package boards.plan;
 import boards.employees.EmployeeChanges;
 import boards.employees.SkillsEmployee;
 import boards.products.Product;
-
 import java.util.ArrayList;
 
 public class Plan {
 
-    ArrayList<Order> orders = new ArrayList<>();
+    private ArrayList<Order> orders = new ArrayList<>();
 
     //TODO: Такий самий має бути але не зі зміною а з крайнім терміном 15:00:00
 
