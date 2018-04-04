@@ -9,8 +9,6 @@ import java.util.regex.Pattern;
 
 public class Board {
     private int boardId;
-//    private SkillsBoard skillsBoard;
-//    private String skill;
     private ArrayList<Position> positions = new ArrayList<>();
     private int assigned = 0;
     private Product joinProduct = null;
@@ -21,18 +19,11 @@ public class Board {
 
     public Board(int boardId) {
         this.boardId = boardId;
-//        skill="";
-//        skillsBoard = new SkillsBoard();
     }
 
     public void setSkill(String skill) {
-//        this.skill = skill;
         this.pat = Pattern.compile(skill);
     }
-
-//    public void setSkills(String skills) {
-//        this.skillsBoard.setPattern(skills);
-//    }
 
     public void setProduct(Product joinProduct) {
         this.joinProduct = joinProduct;
@@ -56,10 +47,6 @@ public class Board {
     public void clearAssignned() {
         assigned = 0;
     }
-
-//    public boolean isValid(String productName) {
-//        return isValid(productName);
-//    }
 
     public boolean isValid (String productName){
         mat = pat.matcher(productName);
